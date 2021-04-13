@@ -13,7 +13,7 @@ except ImportError:
     import json
 
 
-def __send_by_em(to, content, message_type):
+def send_by_em(to, content, message_type):
     to = parse_phone_number(to)
     if not to:
         logging.error(f"invalid phone number {to}")
